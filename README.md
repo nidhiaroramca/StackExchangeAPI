@@ -20,7 +20,7 @@ Apis are referred from http://api.stackexchange.com/docs
 
 Executing:
 -------------
-
+The test is ready to use for CI integration. Just run the below command for the clean tests.
 
 Run the Tests in the Terminal:
 
