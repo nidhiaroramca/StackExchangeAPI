@@ -23,7 +23,14 @@ public class APITest {
     }
 
 
+    @Test
 
+    public void getPrivileges(){
+        given().
+                get("http://api.stackexchange.com/2.2/privileges?site=stackoverflow").
+                then().
+                statusCode(200).log().all();
+    }
 
 
 
@@ -65,7 +72,6 @@ public class APITest {
         httpRequest.header("Content-Type", "application/json");
         Response response = httpRequest.get("http://api.stackexchange.com/2.2/users?order=desc&sort=reputation&site=stackoverflow");
         JsonPath jsonPathEvaluator = response.jsonPath();
-       // System.out.println(jsonPathEvaluator.getString("items.owner.user_id"));
         Assert.assertTrue(jsonPathEvaluator.getString("items.user_type").contains("registered"));
     }
 
