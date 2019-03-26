@@ -32,3 +32,5 @@ Environment Configuration - While working with APIs, we often need different set
 Currently I am running them on my local machine. So it should work same in your machine too.
 
 
+Report - You can find the reports in the folder Target folder/surefire-report. Click on index.html and open it in the browser of your choice.
+
